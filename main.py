@@ -3,8 +3,8 @@ import time
 import requests
 
 m = hashlib.md5()
-
 base_url = "https://gateway.marvel.com"
+
 query = "/v1/public/characters" + "?"
 
 ts = str(time.time())
@@ -24,4 +24,3 @@ api_url = base_url + query + "ts=" + ts + "&apikey=" + public_key + "&hash=" + h
 print(api_url)
 
 data = requests.get(api_url).json()
-print(data)
