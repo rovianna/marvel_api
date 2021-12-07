@@ -3,9 +3,8 @@ import requests
 from dotenv import load_dotenv
 from security import query_keys
 
-base_url = os.getenv("base_url")
-
 def requestMarvelAPI(marvel_path = "/v1/public/characters"):
+    base_url = os.getenv("base_url")
     has_characters_remaining = True
     characters = []
     offset = 0
