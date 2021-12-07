@@ -7,8 +7,6 @@ base_url = os.getenv("base_url")
 
 r = requests.get(base_url)
 
-
-
 def requestMarvelAPI(marvel_path = "/v1/public/characters"):
     has_characters_remaining = True
     characters = []
@@ -24,11 +22,9 @@ def requestMarvelAPI(marvel_path = "/v1/public/characters"):
             print("Fetching... " + response.url)
             body = response.json()['data']
             offset_min = body['offset']
-            print(offset_min)
-            characters.append(body['results'])
+            for character in body['results']:
+                characters.append(character)
             offset = offset_min + body['limit']
-            print(offset)
-            print(body['total'])
             if offset >= body['total']:
                 has_characters_remaining = False
         except:
