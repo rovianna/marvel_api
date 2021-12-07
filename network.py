@@ -5,8 +5,6 @@ from security import query_keys
 
 base_url = os.getenv("base_url")
 
-r = requests.get(base_url)
-
 def requestMarvelAPI(marvel_path = "/v1/public/characters"):
     has_characters_remaining = True
     characters = []
