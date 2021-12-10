@@ -6,9 +6,9 @@
 - pandas
 
 ## ENV 
-public_key = '7d25dee031cf5f3b0d95796877799204'
-private_key = '6454306651e49dc8ac6976e556839e94092af934'
-base_url = "https://gateway.marvel.com"
+- public_key = '7d25dee031cf5f3b0d95796877799204'
+- private_key = '6454306651e49dc8ac6976e556839e94092af934'
+- base_url = "https://gateway.marvel.com"
 
 ### author: rodrigogvianna@outlook.com
 
