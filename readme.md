@@ -16,3 +16,13 @@
 ![WhatsApp Image 2021-12-10 at 17 05 02](https://user-images.githubusercontent.com/8813542/145640316-074453ea-2b51-4a91-8ad8-87c1b68b406f.jpeg)
 
 ### SQL Script is in the project directory /SQL/data-model.sql
+
+
+# Next Steps: 
+
+- Github Actions
+- Send this project on cloud to run it daily
+- AWS Integration (Boto3): The main idea is to save as parquet in a s3 bucket
+- Databricks x S3 Integration: Fetch information saved in the bucket to preview the data
+- Dataviz
+
